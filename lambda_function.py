@@ -3,8 +3,11 @@ import base64
 
 image_mirrors = {
   #'/':'<some dockerhub mirror>', #you can set dockerhub mirror with "/"
-  'gcr.io/': 'asia.gcr.io/',
-  'k8s.gcr.io/': 'asia.gcr.io/google-containers/'
+  'k8s.gcr.io/': 'gcr.azk8s.cn/google_containers/',
+  'gcr.io/': 'gcr.azk8s.cn/',
+  'quay.io/': 'quay.azk8s.cn/',
+   '/': 'dockerhub.azk8s.cn/',
+   'direct.to/': ''
 }
 
 def handler(event, context):
